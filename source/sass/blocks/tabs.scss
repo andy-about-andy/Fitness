@@ -25,6 +25,11 @@
   padding-bottom: 18px;
   font-size: 20px;
   line-height: 30px;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 .tabs__contetnt-list {
@@ -36,6 +41,14 @@
   min-width: 1000px;
   margin: 0;
   padding: 39px 0;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    min-width: 442px;
+    margin: 0 auto;
+    padding: 45px 0 0;
+  }
 }
 
 .tabs__contetnt-item {

@@ -41,6 +41,12 @@
   display: block;
   width: 100%;
   text-align: center;
+
+  @include vp-1199 {
+    padding: 16px 40px;
+    font-size: 10px;
+    line-height: 12px;
+  }
 }
 
 .btn--more {
