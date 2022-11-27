@@ -1,0 +1,54 @@
+.contacts {
+  padding: 56px 0 70px 120px;
+}
+
+.contacts h3 {
+  margin: 0 auto;
+  padding-bottom: 30px;
+  font-family: $ff-alumnisanssemibold;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 84px;
+  letter-spacing: 0.03em;
+}
+
+.contacts__list {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 60px;
+  margin: 0;
+  padding: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 42%;
+    width: 1px;
+    height: 100%;
+    background-color: #74819c;
+  }
+}
+
+.contacts__item {
+  list-style-type: none;
+}
+
+.contacts__item p {
+  margin: 0;
+  padding-bottom: 10px;
+  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contacts__text,
+.contacts__data {
+  font-family: $ff-robotocondensed;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}

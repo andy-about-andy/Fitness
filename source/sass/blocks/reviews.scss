@@ -1,0 +1,130 @@
+.reviews {
+  min-height: 560px;
+  margin: 0 auto;
+  padding: 87px 0 120px;
+}
+
+.reviews__wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 1320px;
+  min-width: 800px;
+}
+
+.reviews__wrap h2 {
+  margin: 0 auto;
+  padding-bottom: 40px;
+  font-family: $ff-alumnisanssemibold;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+}
+
+.reviews__inner {
+  display: flex;
+  justify-content: space-between;
+  width: 560px;
+  min-height: 242px;
+  margin: 0 auto;
+  padding: 62px;
+  background-color: #1c3374;
+  color: $color-default-white;
+}
+
+.reviews__description-container {
+  width: 328px;
+}
+
+.reviews__description-container p {
+  margin: 0;
+  padding-bottom: 5px;
+  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.reviews__description-container blockquote {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.coaches__description-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+  height: 100%;
+  padding: 54px 46px 30px 55px;
+  list-style-type: none;
+  overflow-y: auto;
+  color: $color-default-white;
+  background-color: transparent;
+
+  // @include vp-1084 {
+  //   padding: 30px 12px 22px;
+  // }
+
+  // @include vp-1023 {
+  //   padding: 30px 35px 27px;
+  // }
+
+  // @include vp-767 {
+  //   padding: 30px 25px 18px;
+  // }
+}
+
+.reviews__slider .swiper-button-prev::after,
+.reviews__slider .swiper-button-next::after {
+  color: #afafaf;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.reviews__slider .swiper-button-prev,
+.reviews__slider .swiper-button-next {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 16px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+// .reviews__slider .swiper-button-prev:hover,
+// .reviews__slider .swiper-button-prev:focus {
+//   background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+// }
+
+// .reviews__slider .swiper-button-next:hover,
+// .reviews__slider .swiper-button-next:focus {
+//   background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+// }
+
+// .reviews__slider .swiper-button-prev:active {
+//   background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+// }
+
+// .reviews__slider .swiper-button-next:active {
+//   background: linear-gradient(270deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+// }
+
+// .reviews__slider .swiper-button-prev {
+//   left: 0;
+//   right: auto;
+// }
+
+// .reviews__slider .swiper-button-next {
+//   left: auto;
+//   right: 0;
+// }

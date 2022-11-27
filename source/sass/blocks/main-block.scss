@@ -1,0 +1,83 @@
+.main-block {
+  min-height: 658px;
+  margin: 0 auto;
+  padding: 51px 0 0;
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+
+  @include vp-1199 {
+    min-height: 554px;
+  }
+
+  @include vp-767 {
+    min-height: 491px;
+  }
+}
+
+.main-block__wrap {
+  position: relative;
+  top: 0;
+  left: -8%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1160px;
+  min-width: 636px;
+  margin: 0 auto;
+
+
+  // @include vp-1199 {
+  //   left: 2.7%;
+  //   max-width: 720px;
+  //   min-width: 668px;
+  //   padding: 268px 0 0;
+  // }
+
+  // @include vp-767 {
+  //   left: 0;
+  //   max-width: 737px;
+  //   min-width: 290px;
+  //   padding: 176px 15px 0;
+  // }
+}
+
+.main-block__box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 460px;
+  padding: 121px 64px 0 20px;
+  color: $color-default-white;
+}
+
+.main-block__box > p {
+  width: 133px;
+  margin: 0 0 0 auto;
+  font-family: $ff-alumnisanssemibold;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+}
+
+.main-block__inner {
+  display: flex;
+  padding-bottom: 47px;
+}
+
+.main-block__inner p {
+  margin: auto 0 0;
+  padding: 0 17px 26px 0;
+  line-height: 21px;
+  text-align: right;
+}
+
+.main-block__inner h1 {
+  margin: 0;
+  font-family: "Alumni Sans Semi Bold", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 92px;
+  line-height: 110px;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-shadow: 0 1px 0 rgb(255, 255, 255), 0 -1px 0 rgb(255, 255, 255), 1px 0 0 rgb(255, 255, 255), -1px 0 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255), 0 2px 0 rgb(255, 255, 255), 0 -2px 0 rgb(255, 255, 255), 2px 0 0 rgb(255, 255, 255), -2px 0 0 rgb(255, 255, 255), 2px 2px 0 rgb(255, 255, 255), 2px -2px 0 rgb(255, 255, 255), -2px 2px 0 rgb(255, 255, 255), -2px -2px 0 rgb(255, 255, 255);
+}

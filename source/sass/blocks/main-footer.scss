@@ -1,0 +1,18 @@
+.main-footer {
+  min-height: 108px;
+  margin: 0 auto;
+  padding: 41px 0 42px;
+  background-color: #030a1a;
+}
+
+.main-footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1320px;
+  min-width: 800px;
+  // color: $color-default-white;
+}
+
+.main-footer__logo {
+  fill: $color-default-white;
+}
