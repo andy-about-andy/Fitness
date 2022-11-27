@@ -1,0 +1,76 @@
+.subscriptions {
+  position: relative;
+  min-height: 851px;
+  margin: 0 auto;
+  padding: 120px 0;
+  background-color: #f8f9fc;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -150px;
+    right: -182px;
+    z-index: 1;
+    width: 470px;
+    height: 494px;
+    background-image: url("../img/subscriptions-background-desktop.webp");
+    background-repeat: no-repeat;
+
+    @media (min-width: $vp-1200) and (min-resolution: $retina-dppx) {
+      // background-image: url("../img/subscriptions-background-desktop@2x.webp");
+    }
+  }
+
+  @include vp-1199 {
+    min-height: 1779px;
+
+    &::before {
+      background-image: url("../img/subscriptions-background-tablet.webp");
+
+      @include retina {
+        background-image: url("../img/subscriptions-background-tablet@2x.webp");
+      }
+    }
+  }
+
+  @include vp-767 {
+    min-height: 1487px;
+
+    &::before {
+      background-image: none;
+    }
+  }
+}
+
+.subscriptions__wrap {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1320px;
+  min-width: 800px;
+
+  // @include vp-1199 {
+  //   left: 2.7%;
+  //   max-width: 720px;
+  //   min-width: 668px;
+  //   padding: 268px 0 0;
+  // }
+
+  // @include vp-767 {
+  //   left: 0;
+  //   max-width: 737px;
+  //   min-width: 290px;
+  //   padding: 176px 15px 0;
+  // }
+}
+
+.subscriptions__wrap h2 {
+  margin: 0;
+  font-family: $ff-alumnisanssemibold;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+}

@@ -1,0 +1,107 @@
+.advantages {
+  min-height: 664px;
+  margin: 0 auto;
+  padding: 150px 0 90px;
+  background-color: #f8f9fc;
+}
+
+.advantages__wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 1320px;
+  min-width: 800px;
+  padding: 0 141px 0;
+}
+
+.advantages__wrap h2 {
+  margin: 0 auto;
+  padding-bottom: 55px;
+  font-family: $ff-alumnisanssemibold;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: 1fr 240px 1fr;
+  gap: 166px 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item {
+  display: flex;
+  align-items: flex-end;
+  list-style-type: none;
+}
+
+.advantages__item--central-block {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  padding: 63px 34px;
+  background-color: #1c3374;
+  color: $color-default-white;
+}
+
+.advantages__value {
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 71px;
+  line-height: 65px;
+  background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.advantages__text {
+  font-family: $ff-robotocondensed;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #2e35ac;
+}
+
+.advantages__description h3 {
+  margin: 0;
+  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.advantages__description p {
+  margin: 0;
+  padding-top: 6px;
+  font-family: "Roboto Condensed Light", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.advantages__inner {
+  text-align: center;
+  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 100px;
+}
+
+.advantages__inner h3 {
+  margin: 0 auto;
+  font-size: 26px;
+  line-height: 39px;
+}
+
+.advantages__inner p {
+  margin: 0 auto;
+  padding-top: 50px;
+  font-family: $ff-robotocondensed;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}

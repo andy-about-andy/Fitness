@@ -1,0 +1,16 @@
+// .footer-nav {
+
+// }
+
+.footer-nav__list {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 40px;
+  margin: 0;
+  list-style-type: none;
+}
+
+.footer-nav__button {
+  line-height: 16px;
+  color: $color-default-white;
+}
