@@ -9,6 +9,12 @@
   flex-direction: column;
   max-width: 1320px;
   min-width: 800px;
+
+  @include vp-1199 {
+    max-width: 997px;
+    min-width: 566px;
+    padding: 0 101px;
+  }
 }
 
 .coaches__wrap h2 {
@@ -19,6 +25,12 @@
   font-size: 54px;
   line-height: 65px;
   letter-spacing: 0.03em;
+
+  @include vp-1199 {
+    margin: 0 auto;
+    font-size: 42px;
+    line-height: 50px;
+  }
 }
 
 .coaches__container {

@@ -3,6 +3,10 @@
   margin: 0 auto;
   padding: 41px 0 42px;
   background-color: #030a1a;
+
+  @include vp-1199 {
+    padding: 45px 0 44px;
+  }
 }
 
 .main-footer__wrap {
@@ -10,9 +14,22 @@
   justify-content: space-between;
   max-width: 1320px;
   min-width: 800px;
-  // color: $color-default-white;
+
+  @include vp-1199 {
+    max-width: 1289px;
+    min-width: 768px;
+  }
+}
+
+.main-footer__link-logo {
+  padding-top: 5px;
 }
 
 .main-footer__logo {
   fill: $color-default-white;
+
+  @include vp-1199 {
+    width: 80px;
+    height: 18px;
+  }
 }
