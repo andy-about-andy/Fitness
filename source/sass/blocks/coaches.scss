@@ -2,6 +2,16 @@
   min-height: 550px;
   margin: 0 auto;
   padding: 70px 0 90px;
+
+  // @include vp-1199 {
+  //   min-height: 292px;
+  //   padding: 100px 0 30px;
+  // }
+
+  // @include vp-767 {
+  //   min-height: 584px;
+  //   padding: 70px 0 30px;
+  // }
 }
 
 .coaches__wrap {
@@ -14,6 +24,12 @@
     max-width: 997px;
     min-width: 566px;
     padding: 0 101px;
+  }
+
+  @include vp-767 {
+    max-width: 350px;
+    min-width: 226px;
+    padding: 0 47px;
   }
 }
 
@@ -30,6 +46,11 @@
     margin: 0 auto;
     font-size: 42px;
     line-height: 50px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
   }
 }
 

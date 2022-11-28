@@ -1,5 +1,9 @@
 .footer-nav {
   padding-top: 3px;
+
+  @include vp-767 {
+    padding: 0;
+  }
 }
 
 .footer-nav__list {
@@ -13,9 +17,47 @@
   @include vp-1199 {
     gap: 30px;
   }
+
+  @include vp-767 {
+    grid-template-columns: 130px 1fr;
+    gap: 25px 0;
+  }
 }
 
 .footer-nav__button {
   line-height: 16px;
   color: $color-default-white;
+
+  @include vp-767 {
+    order: 1;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.footer-nav__button--stock {
+  @include vp-767 {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    margin-left: 130px;
+    order: -1;
+  }
+}
+
+.footer-nav__button--subscriptions {
+  @include vp-767 {
+    order: 3;
+  }
+}
+
+.footer-nav__button--coaches {
+  @include vp-767 {
+    order: 2;
+  }
+}
+
+.footer-nav__button--schedule {
+  @include vp-767 {
+    order: 4;
+  }
 }
