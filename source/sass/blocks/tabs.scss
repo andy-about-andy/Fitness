@@ -4,7 +4,7 @@
 
 .tabs__triggers {
   position: relative;
-  max-width: 400px;
+  max-width: 500px;
   min-width: 341px;
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -19,6 +19,17 @@
     height: 0;
     border: 1px solid rgba(120, 120, 120, 0.2);
   }
+
+
+  @include vp-1199 {
+    gap: 54px;
+    min-width: 332px;
+  }
+
+  @include vp-767 {
+    gap: 45px;
+    min-width: 290px;
+  }
 }
 
 .tabs__item {
@@ -29,6 +40,11 @@
   @include vp-1199 {
     font-size: 18px;
     line-height: 27px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -49,6 +65,13 @@
     margin: 0 auto;
     padding: 45px 0 0;
   }
+
+  @include vp-767 {
+    gap: 35px;
+    max-width: 400px;
+    min-width: 290px;
+    padding: 35px 0 0;
+  }
 }
 
 .tabs__contetnt-item {
@@ -58,6 +81,11 @@
   min-height: 448px;
   padding: 67px 76px;
   background-color: $color-default-white;
+
+  @include vp-767 {
+    min-height: 384px;
+    padding: 55px 42px;
+  }
 }
 
 .tabs__contetnt-item h3 {
@@ -65,6 +93,11 @@
   font-family: "Roboto Condensed Bold", "Arial", sans-serif;
   font-size: 26px;
   line-height: 29px;
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 24px;
+  }
 }
 
 .tabs__contetnt-item > p {
@@ -73,12 +106,21 @@
   font-size: 16px;
   line-height: 24px;
   color: $color-secondary-black;
+
+  @include vp-767 {
+    padding: 15px 0 50px;
+  }
 }
 
 .tabs__price {
   max-width: 215px;
   min-width: 203px;
   min-height: 43px;
+
+  @include vp-767 {
+    max-width: 200px;
+    min-width: 162px;
+  }
 }
 
 .tabs__price p {
@@ -114,6 +156,28 @@
     line-height: 150px;
     color: #e8e8e8;
     opacity: 0.48;
+  }
+
+  @include vp-767 {
+    padding: 31px 47px 0 17px;
+    font-size: 48px;
+    line-height: 72px;
+
+    &::before {
+      top: -14px;
+      width: 162px;
+      height: 55px;
+      font-size: 80px;
+      line-height: 120px;
+    }
+
+    &::after {
+      right: 19px;
+      bottom: 19px;
+      width: 24px;
+      height: 33px;
+      background-size: contain;
+    }
   }
 }
 
