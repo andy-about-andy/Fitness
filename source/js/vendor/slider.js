@@ -38,6 +38,8 @@ const swiperReviews = new Swiper('.reviews__slider', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  slidesPerView: 1,
+  spaceBetween: 0,
   keyboard: true,
   grabCursor: true,
 });

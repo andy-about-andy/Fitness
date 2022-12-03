@@ -1,6 +1,6 @@
 .btn {
   display: inline-flex;
-  padding: 22px 56px;
+  padding: 20px 54px;
   font-family: "Roboto Condensed Bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 12px;
@@ -35,6 +35,11 @@
   text-align: center;
   letter-spacing: 0.05em;
 
+  @include vp-1199 {
+    // width: 183px;
+    padding: 20px 30px;
+  }
+
   @include vp-767 {
     display: block;
     width: 100%;
@@ -42,7 +47,10 @@
 }
 
 .btn--buy-subscriptions {
-  padding: 25px 42px;
+  min-width: 208px;
+  margin: auto 0 0;
+  padding: 24px 43px;
+  text-align: center;
   color: $color-default-black;
   border: 2px solid $color-default-black;
 }
@@ -51,12 +59,19 @@
   font-weight: 700;
   display: block;
   width: 100%;
+  margin: 0 0 10px;
+  padding: 25px 30px;
   text-align: center;
 
   @include vp-1199 {
-    padding: 16px 40px;
+    padding: 12px 40px;
     font-size: 10px;
     line-height: 12px;
+    border: 2px solid $color-default-white;
+  }
+
+  @include vp-1199 {
+    padding: 13px 40px 12px;
   }
 }
 
@@ -84,6 +99,10 @@
 }
 
 .btn--more-other {
+  max-width: 90px;
+  min-width: 68px;
+  font-size: 12px;
+  line-height: 14px;
   color: #1c3374;
 
   &::before {
@@ -95,12 +114,19 @@
   display: block;
   grid-column: 1/3;
   grid-row: 3/4;
+  margin-top: 9px;
   padding: 16px 56px;
   font-size: 14px;
   line-height: 16px;
+  border: 3px solid $color-default-white;
+
+  @include vp-1199 {
+    margin: 0;
+  }
 
   @include vp-767 {
     grid-column: 1/-1;
     grid-row: 4/5;
+    margin-top: 6px;
   }
 }

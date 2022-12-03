@@ -1,20 +1,31 @@
 .contacts {
-  padding: 56px 0 70px 120px;
+  padding: 48px 0 53px 120px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #74819c;
+  }
 
   @include vp-1199 {
-    width: 472px;
+    width: 503px;
     margin: 0 auto;
-    padding: 70px 0;
+    padding: 62px 31px 60px 0;
   }
 
   @include vp-767 {
-    padding: 70px 15px;
+    width: 320px;
+    padding: 65px 15px 62px;
   }
 }
 
 .contacts h3 {
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
   font-family: $ff-alumnisanssemibold;
   font-weight: 600;
   font-size: 54px;
@@ -22,11 +33,13 @@
   letter-spacing: 0.03em;
 
   @include vp-1199 {
+    padding-bottom: 32px;
     font-size: 42px;
     line-height: 50px;
   }
 
   @include vp-767 {
+    padding-bottom: 34px;
     font-size: 32px;
     line-height: 38px;
   }
@@ -37,15 +50,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  gap: 30px 60px;
+  gap: 17px 23px;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 3px;
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 42%;
+    left: 41.5%;
     width: 1px;
     height: 100%;
     background-color: #74819c;
@@ -53,16 +66,17 @@
 
   @include vp-1199 {
     grid-template-columns: 220px 1fr;
-    gap: 30px 94px;
+    gap: 20px 94px;
+    padding: 0;
 
     &::before {
-      left: 56%;
+      left: 56.5%;
     }
   }
 
   @include vp-767 {
     grid-template-columns: 290px;
-    gap: 35px;
+    gap: 19px;
 
     &::before {
       content: none;
@@ -76,7 +90,6 @@
 
 .contacts__item p {
   margin: 0;
-  padding-bottom: 10px;
   font-family: "Roboto Condensed Bold", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -98,6 +111,8 @@
   line-height: 21px;
 
   @include vp-1199 {
+    display: block;
+    padding-top: 6px;
     font-size: 18px;
     line-height: 27px;
   }
