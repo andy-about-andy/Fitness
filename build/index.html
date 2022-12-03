@@ -77,8 +77,18 @@
                 <img loading="lazy" width="660" height="401" src="img/gym-image-desktop.jpg" srcset="img/gym-image-desktop@2x.jpg 2x" alt="Три пингвина на снегу.">
               </picture>
             </div>
-            <div class="gym__content-video">
-              <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="gym__video-wrap">
+              <div class="gym__content-video">
+                <a class="gym__video-link" href="https://youtu.be/9TZXsZItgdw">
+                  <picture>
+                    <source width="364" height="228" media="(min-width: 1200px)" type="image/webp" srcset="img/video-poster-desktop.webp 1x, img/video-poster-desktop@2x.webp 2x">
+                    <source width="226" height="167" media="(min-width: 768px)" type="image/webp" srcset="img/video-poster-tablet.webp 1x, img/video-poster-tablet@2x.webp 2x">
+                    <source width="320" height="167" type="image/webp" srcset="img/video-poster-mobile.webp 1x, img/video-poster-mobile@2x.webp 2x">
+                    <img class="gym__media" loading="lazy" width="364" height="228" src="https://i.ytimg.com/vi/9TZXsZItgdw/maxresdefault.jpg" srcset="img/video-poster-desktop@2x.png 2x" alt="Тренажёрный зал.">
+                  </picture>
+                </a>
+                <button class="btn gym__video-button" type="button" aria-label="Запустить видео"></button>
+              </div>
             </div>
           </div>
         </section>
@@ -124,7 +134,7 @@
                   <li class="tabs__contetnt-item">
                     <h3>С&nbsp;тренером</h3>
                     <p>12 занятий</p>
-                    <div class="tabs__price">
+                    <div class="tabs__price tabs__price--half-year-coach">
                       <p>23000</p>
                     </div>
                     <a class="btn btn--buy-subscriptions" href="#">Купить абонемент</a>
@@ -132,7 +142,7 @@
                   <li class="tabs__contetnt-item">
                     <h3>Дневной</h3>
                     <p>с 8:00 до 17:00</p>
-                    <div class="tabs__price tabs__price--month-daytime">
+                    <div class="tabs__price tabs__price--half-year-daytime">
                       <p>7800</p>
                     </div>
                     <a class="btn btn--buy-subscriptions" href="#">Купить абонемент</a>
@@ -140,7 +150,7 @@
                   <li class="tabs__contetnt-item">
                     <h3>Полный день</h3>
                     <p>с 8:00 до 22:00</p>
-                    <div class="tabs__price tabs__price--month-day">
+                    <div class="tabs__price tabs__price--half-year-day">
                       <p>12400</p>
                     </div>
                     <a class="btn btn--buy-subscriptions" href="#">Купить абонемент</a>
@@ -152,7 +162,7 @@
                   <li class="tabs__contetnt-item">
                     <h3>С&nbsp;тренером</h3>
                     <p>12 занятий</p>
-                    <div class="tabs__price">
+                    <div class="tabs__price tabs__price--year-coach">
                       <p>42000</p>
                     </div>
                     <a class="btn btn--buy-subscriptions" href="#">Купить абонемент</a>
@@ -160,7 +170,7 @@
                   <li class="tabs__contetnt-item">
                     <h3>Дневной</h3>
                     <p>с 8:00 до 17:00</p>
-                    <div class="tabs__price tabs__price--month-daytime">
+                    <div class="tabs__price tabs__price--year-daytime">
                       <p>14500</p>
                     </div>
                     <a class="btn btn--buy-subscriptions" href="#">Купить абонемент</a>
@@ -168,7 +178,7 @@
                   <li class="tabs__contetnt-item">
                     <h3>Полный день</h3>
                     <p>с 8:00 до 22:00</p>
-                    <div class="tabs__price tabs__price--month-day">
+                    <div class="tabs__price tabs__price--year-day">
                       <p>23000</p>
                     </div>
                     <a class="btn btn--buy-subscriptions" href="#">Купить абонемент</a>
@@ -187,7 +197,7 @@
                   <p>Дата</p>
                   <time class="promo-block__datetime" datetime="2019-03-07">7<span class="promo-block__date">Марта<br>2019</span></time>
                   <p>Время</p>
-                  <time class="promo-block__datetime" datetime="12:00">12:00</time>
+                  <time class="promo-block__datetime promo-block__datetime--line" datetime="12:00">12:00</time>
                 </div>
               </div>
               <p>Ежегодные соревнования по CrossFit</p>
@@ -208,7 +218,7 @@
             <h2>Тренеры</h2>
             <article class="coaches__slider swiper">
               <div class="swiper-wrapper">
-                <div class="coaches__container coaches__container--flat-white swiper-slide">
+                <div class="coaches__container swiper-slide">
                   <div class="coaches__inner">
                     <picture>
                       <source width="260" height="294" media="(min-width: 1200px)" type="image/webp" srcset="img/coach-1-desktop.webp 1x, img/coach-1-desktop@2x.webp 2x">
@@ -229,7 +239,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="coaches__container coaches__container--flat-white swiper-slide">
+                <div class="coaches__container swiper-slide">
                   <div class="coaches__inner">
                     <picture>
                       <source width="260" height="294" media="(min-width: 1200px)" type="image/webp" srcset="img/coach-2-desktop.webp 1x, img/coach-2-desktop@2x.webp 2x">
@@ -250,7 +260,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="coaches__container coaches__container--flat-white swiper-slide">
+                <div class="coaches__container swiper-slide">
                   <div class="coaches__inner">
                     <picture>
                       <source width="260" height="294" media="(min-width: 1200px)" type="image/webp" srcset="img/coach-3-desktop.webp 1x, img/coach-3-desktop@2x.webp 2x">
@@ -271,7 +281,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="coaches__container coaches__container--flat-white swiper-slide">
+                <div class="coaches__container swiper-slide">
                   <div class="coaches__inner">
                     <picture>
                       <source width="260" height="294" media="(min-width: 1200px)" type="image/webp" srcset="img/coach-4-desktop.webp 1x, img/coach-4-desktop@2x.webp 2x">
@@ -293,7 +303,7 @@
                   </div>
                 </div>
 
-                <div class="coaches__container coaches__container--flat-white swiper-slide">
+                <div class="coaches__container swiper-slide">
                   <div class="coaches__inner">
                     <picture>
                       <source width="260" height="294" media="(min-width: 1200px)" type="image/webp" srcset="img/coach-5-desktop.webp 1x, img/coach-5-desktop@2x.webp 2x">
@@ -314,7 +324,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="coaches__container coaches__container--flat-white swiper-slide">
+                <div class="coaches__container swiper-slide">
                   <div class="coaches__inner">
                     <picture>
                       <source width="260" height="294" media="(min-width: 1200px)" type="image/webp" srcset="img/coach-6-desktop.webp 1x, img/coach-6-desktop@2x.webp 2x">
@@ -335,7 +345,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="coaches__container coaches__container--flat-white swiper-slide">
+                <div class="coaches__container swiper-slide">
                   <div class="coaches__inner">
                     <picture>
                       <source width="260" height="294" media="(min-width: 1200px)" type="image/webp" srcset="img/coach-7-desktop.webp 1x, img/coach-7-desktop@2x.webp 2x">
@@ -356,7 +366,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="coaches__container coaches__container--flat-white swiper-slide">
+                <div class="coaches__container swiper-slide">
                   <div class="coaches__inner">
                     <picture>
                       <source width="260" height="294" media="(min-width: 1200px)" type="image/webp" srcset="img/coach-8-desktop.webp 1x, img/coach-8-desktop@2x.webp 2x">
@@ -393,7 +403,7 @@
                 </div>
                 <div class="advantages__description">
                   <h3>Площадь</h3>
-                  <p>Занимайтесь без очередей и толпучки</p>
+                  <p>Занимайтесь без&nbsp;очередей и&nbsp;толпучки</p>
                 </div>
               </li>
               <li class="advantages__item advantages__item--parking">
@@ -402,7 +412,7 @@
                 </div>
                 <div class="advantages__description">
                   <h3>Собственная парковка</h3>
-                  <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+                  <p>Вы всегда найдете место для своей&nbsp;машины на нашей парковке</p>
                 </div>
               </li>
               <li class="advantages__item advantages__item--central-block">
@@ -416,18 +426,18 @@
                 <div class="advantages__value">
                   350<span class="advantages__text">мест</span>
                 </div>
-                <div class="advantages__description">
+                <div class="advantages__description advantages__description--comfort">
                   <h3>Комфорт</h3>
-                  <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+                  <p>Просторные раздевалки, душевые,&nbsp;фен, Wi-Fi, кулеры</p>
                 </div>
               </li>
               <li class="advantages__item advantages__item--experience">
                 <div class="advantages__value">
                   5+<span class="advantages__text">лет</span>
                 </div>
-                <div class="advantages__description">
+                <div class="advantages__description advantages__description--experience">
                   <h3>Тренерский опыт</h3>
-                  <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+                  <p>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
                 </div>
               </li>
             </ul>
@@ -455,12 +465,12 @@
               <div class="stock__others">
                 <div class="stock__inner">
                   <h3>Месяц бесплатно</h3>
-                  <p>Приведи друга, получи абонемент в подарок</p>
+                  <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
                   <a class="btn btn--more btn--more-other" href="#">Подробнее</a>
                 </div>
                 <div class="stock__inner">
                   <h3>Скидка 20%</h3>
-                  <p>Корпоративный фитнес  с командой</p>
+                  <p>Корпоративный фитнес  с&nbsp;командой</p>
                   <a class="btn btn--more btn--more-other" href="#">Подробнее</a>
                 </div>
               </div>
@@ -600,7 +610,7 @@
                 <li class="social__item">
                   <a class="social__link" href="https://htmlacademy.ru/">
                     <span class="visually-hidden">Мы в Одноклассниках.</span>
-                    <svg class="social__icon social__icon--ok" aria-hidden="true" focusable="false" width="25" height="25">
+                    <svg class="social__icon" aria-hidden="true" focusable="false" width="25" height="25">
                       <use href="img/sprite.svg#social-icon-ok"></use>
                     </svg>
                   </a>

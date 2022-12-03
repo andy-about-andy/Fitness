@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {tabs} from './modules/modals/tabs';
+import playVideo from './modules/modals/video';
 
 // ---------------------------------
 
@@ -19,6 +20,8 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     tabs();
+    playVideo();
+
   });
 });
 

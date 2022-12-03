@@ -1,5 +1,9 @@
 .footer-nav {
-  padding-top: 3px;
+  padding: 2px 0 0 51px;
+
+  @include vp-1199 {
+    padding: 1px 0 0 57px;
+  }
 
   @include vp-767 {
     padding: 0;
@@ -20,7 +24,7 @@
 
   @include vp-767 {
     grid-template-columns: 130px 1fr;
-    gap: 25px 0;
+    gap: 16px 30px;
   }
 }
 
@@ -39,7 +43,7 @@
   @include vp-767 {
     grid-column: 1/-1;
     grid-row: 1/2;
-    margin-left: 130px;
+    margin-left: 160px;
     order: -1;
   }
 }

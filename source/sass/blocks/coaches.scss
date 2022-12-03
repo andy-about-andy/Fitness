@@ -1,16 +1,16 @@
 .coaches {
   min-height: 550px;
   margin: 0 auto;
-  padding: 70px 0 90px;
+  padding: 77px 0 91px;
 
   @include vp-1199 {
-    min-height: 292px;
-    padding: 100px 0 30px;
+    min-height: 294px;
+    padding: 70px 0 100px;
   }
 
   @include vp-767 {
-    min-height: 584px;
-    padding: 70px 0 30px;
+    min-height: 410px;
+    padding: 33px 0 70px;
   }
 }
 
@@ -18,27 +18,24 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  // width: 1320px;
   padding: 0 24px;
   max-width: 1320px;
-  // min-width: 800px;
+  min-width: 1040px;
 
   @include vp-1199 {
     max-width: 997px;
-    min-width: 566px;
-    // padding: 0 101px;
+    min-width: 768px;
   }
 
   @include vp-767 {
-    max-width: 350px;
+    max-width: 400px;
     min-width: 226px;
-    padding: 0 47px;
   }
 }
 
 .coaches__wrap h2 {
   margin: 0;
-  padding: 0 0 45px 56px;
+  padding: 0 0 47px 57px;
   font-family: $ff-alumnisanssemibold;
   font-weight: 600;
   font-size: 54px;
@@ -47,34 +44,23 @@
 
   @include vp-1199 {
     margin: 0 auto;
+    padding: 0 4px 31px 0;
     font-size: 42px;
     line-height: 50px;
   }
 
   @include vp-767 {
+    padding: 0 4px 42px 0;
     font-size: 32px;
     line-height: 38px;
   }
 }
 
 .coaches__container {
-  // display: block;
-  max-width: 260px;
+  width: auto;
   margin: 0 auto;
   background-color: #b6bfc8;
   // object-fit: contain;
-
-  @include vp-1199 {
-    max-width: 300px;
-    min-width: 268px;
-    // padding: 0 101px;
-  }
-
-  @include vp-767 {
-    // max-width: 350px;
-    // min-width: 226px;
-    // padding: 0 47px;
-  }
 }
 
 .coaches__inner img {
@@ -100,6 +86,40 @@
 .coaches__inner:hover h3,
 .coaches__inner:focus-within .h3 {
   margin: 0 auto;
+  padding: 0 1px 0 0;
+
+  @include vp-1199 {
+    padding: 0 14px 0 0;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+
+.coaches__description-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+  height: 100%;
+  padding: 54px 46px 23px 48px;
+  list-style-type: none;
+  overflow-y: auto;
+  color: $color-default-white;
+  background-color: transparent;
+
+  @include vp-1199 {
+    padding: 54px 40px 23px 47px;
+  }
+
+  @include vp-767 {
+    padding: 43px 33px 40px 34px;
+  }
 }
 
 .coaches__description-container h3 {
@@ -107,11 +127,11 @@
   font-family: "Roboto Condensed Bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 23px;
   color: $color-default-white;
 
-  // @include vp-1199 {
-  //   margin: auto 0 0;
+  // @include vp-767 {
+  //   padding: 48px 33px 47px 34px;
   // }
 }
 
@@ -129,52 +149,37 @@
   font-size: 16px;
   line-height: 24px;
   color: #b6bdcc;
-}
 
-.coaches__description-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  width: 100%;
-  height: 100%;
-  padding: 54px 46px 30px 55px;
-  list-style-type: none;
-  overflow-y: auto;
-  color: $color-default-white;
-  background-color: transparent;
+  @include vp-1199 {
+    padding: 0 13px 0 0;
+    line-height: 22px;
+  }
 
-  // @include vp-1084 {
-  //   padding: 30px 12px 22px;
-  // }
-
-  // @include vp-1023 {
-  //   padding: 30px 35px 27px;
-  // }
-
-  // @include vp-767 {
-  //   padding: 30px 25px 18px;
-  // }
+  @include vp-767 {
+    padding: 0;
+  }
 }
 
 .coaches__list {
   margin: 0;
-  padding: 35px 0 0;
+  padding: 32px 0 0;
+
+  @include vp-1199 {
+    padding: 34px 0 0;
+  }
 }
 
 .coaches__item {
   position: relative;
-  padding: 0 0 10px 15px;
+  padding: 0 0 13px 23px;
   line-height: 21px;
   list-style-type: none;
 
   &::before {
     content: "";
     position: absolute;
-    top: 6px;
-    left: 0;
+    top: 7px;
+    left: 6px;
     width: 6px;
     height: 6px;
     background-color: $color-default-white;
@@ -184,27 +189,29 @@
   &:last-child {
     padding-bottom: 0;
   }
-}
-
-.coaches__slider {
-  width: 1160px;
 
   @include vp-1199 {
-    width: 566px;
+    padding: 0 0 13px 24px;
+
+    &::before {
+      top: 6px;
+      left: 7px;
+    }
   }
 
   @include vp-767 {
-    max-width: 350px;
-    min-width: 226px;
-    padding: 0 47px;
+    padding: 0 0 13px 16px;
+
+    &::before {
+      top: 7px;
+      left: 0;
+    }
   }
 }
 
 .coaches__slider .swiper-button-prev::after,
 .coaches__slider .swiper-button-next::after {
-  color: #afafaf;
-  font-size: 28px;
-  font-weight: 300;
+  font-size: 0;
 }
 
 .coaches__slider .swiper-button-prev,
@@ -217,9 +224,21 @@
   margin: 0;
   padding: 0;
   background-color: transparent;
+  background-image: url("../img/svg/icon-arrow.svg");
   border: none;
   cursor: pointer;
   outline: none;
+
+  @include vp-1199 {
+    top: 56.5%;
+  }
+
+  @include vp-767 {
+    top: 59.1%;
+    width: 10px;
+    height: 19px;
+    background-size: 10px 19px;
+  }
 }
 
 // .coaches__slider .swiper-button-prev:hover,
@@ -240,16 +259,63 @@
 //   background: linear-gradient(270deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
 // }
 
+.coaches__slider .swiper-slide {
+  max-width: 260px;
+  min-width: 200px;
+
+  @include vp-1199 {
+    max-width: 385px;
+    min-width: 268px;
+  }
+
+  @include vp-767 {
+    max-width: 385px;
+    min-width: 226px;
+  }
+}
+
 .coaches__slider .swiper-button-prev {
-  left: 10px;
+  left: 23px;
   right: auto;
+
+  @include vp-1199 {
+    left: 44px;
+  }
+
+  @include vp-767 {
+    left: 14px;
+  }
 }
 
 .coaches__slider .swiper-button-next {
   left: auto;
-  right: 10px;
+  right: 23px;
+  rotate: 180deg;
+
+  @include vp-1199 {
+    right: 44px;
+  }
+
+  @include vp-767 {
+    right: 14px;
+  }
 }
 
 .coaches__wrap .swiper {
   position: static;
+  width: auto;
+  max-width: 1160px;
+  min-width: 1040px;
+  margin: 0 56px;
+
+  @include vp-1199 {
+    max-width: 800px;
+    min-width: 566px;
+  }
+
+  @include vp-767 {
+    max-width: 400px;
+    min-width: 226px;
+    margin: 0 32px;
+  }
 }
