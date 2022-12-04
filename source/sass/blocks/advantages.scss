@@ -28,7 +28,6 @@
   }
 
   @include vp-767 {
-    // max-width: 480px;
     min-width: 320px;
     padding: 0;
   }
@@ -193,7 +192,7 @@
   display: flex;
   flex-direction: column;
   padding: 0 30px 0 19px;
-  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  font-family: $ff-robotocondensedbold;
   font-weight: 700;
   font-size: 71px;
   line-height: 54px;
@@ -243,7 +242,7 @@
 
 .advantages__description h3 {
   margin: 0;
-  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  font-family: $ff-robotocondensedbold;
   font-weight: 700;
   font-size: 22px;
   line-height: 22px;
@@ -257,7 +256,7 @@
 .advantages__description p {
   margin: 0;
   padding-top: 10px;
-  font-family: "Roboto Condensed Light", "Arial", sans-serif;
+  font-family: $ff-robotocondensedlight;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
@@ -286,8 +285,11 @@
 }
 
 .advantages__inner {
+  display: flex;
+  flex-direction: column;
+
   text-align: center;
-  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  font-family: $ff-robotocondensedbold;
   font-weight: 700;
   font-size: 74px;
   line-height: 80px;

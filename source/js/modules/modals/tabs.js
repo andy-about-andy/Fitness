@@ -1,3 +1,11 @@
+const tabsContent = document.querySelector('.tabs__content--nojs');
+tabsContent.classList.remove('tabs__content--nojs');
+
+const tabsContentInner = document.querySelectorAll('.tabs__content-inner--nojs');
+tabsContentInner.forEach((contentInner) => {
+  contentInner.classList.remove('tabs__content-inner--nojs');
+});
+
 document.querySelectorAll('.tabs__item').forEach((item) =>
   item.addEventListener('click', function (evt) {
     evt.preventDefault();

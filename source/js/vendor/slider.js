@@ -1,3 +1,9 @@
+const coaches = document.querySelector('.swiper-wrapper--nojs');
+const reviews = document.querySelector('.swiper-wrapper--reviews-nojs');
+
+coaches.classList.remove('swiper-wrapper--nojs');
+reviews.classList.remove('swiper-wrapper--reviews-nojs');
+
 const swiperCoaches = new Swiper('.coaches__slider', {
   navigation: {
     nextEl: '.swiper-button-next',
