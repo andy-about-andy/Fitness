@@ -116,7 +116,7 @@
 .main-block__inner h1 {
   margin: 0;
   padding-top: 16px;
-  font-family: "Alumni Sans Semi Bold", "Arial", sans-serif;
+  font-family: $ff-alumnisanssemibold;
   font-weight: 600;
   font-size: 92px;
   line-height: 110px;
@@ -124,7 +124,6 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   -webkit-text-stroke-width: 3px;
-  // text-shadow: 0 1px 0 rgb(255, 255, 255), 0 -1px 0 rgb(255, 255, 255), 1px 0 0 rgb(255, 255, 255), -1px 0 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255), 0 2px 0 rgb(255, 255, 255), 0 -2px 0 rgb(255, 255, 255), 2px 0 0 rgb(255, 255, 255), -2px 0 0 rgb(255, 255, 255), 2px 2px 0 rgb(255, 255, 255), 2px -2px 0 rgb(255, 255, 255), -2px 2px 0 rgb(255, 255, 255), -2px -2px 0 rgb(255, 255, 255);
 
   @include vp-1199 {
     padding-top: 10px;

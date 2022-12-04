@@ -60,7 +60,6 @@
   width: auto;
   margin: 0 auto;
   background-color: #b6bfc8;
-  // object-fit: contain;
 }
 
 .coaches__inner img {
@@ -113,6 +112,10 @@
   color: $color-default-white;
   background-color: transparent;
 
+  @include vp-1239 {
+    padding: 40px 42px 23px 42px;
+  }
+
   @include vp-1199 {
     padding: 54px 40px 23px 47px;
   }
@@ -124,15 +127,11 @@
 
 .coaches__description-container h3 {
   margin: auto auto 0;
-  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  font-family: $ff-robotocondensedbold;
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
   color: $color-default-white;
-
-  // @include vp-767 {
-  //   padding: 48px 33px 47px 34px;
-  // }
 }
 
 .coaches__description-inner {
@@ -217,47 +216,48 @@
 .coaches__slider .swiper-button-prev,
 .coaches__slider .swiper-button-next {
   position: absolute;
-  top: 60%;
+  top: 112px;
   left: 0;
-  width: 16px;
-  height: 32px;
+  width: 56px;
+  height: calc(100% - 112px);
   margin: 0;
   padding: 0;
   background-color: transparent;
   background-image: url("../img/svg/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 17px 32px;
+  background-position: left 0 top 50%;
   border: none;
   cursor: pointer;
   outline: none;
 
   @include vp-1199 {
-    top: 56.5%;
+    top: 81px;
+    width: 32px;
+    height: calc(100% - 81px);
   }
 
   @include vp-767 {
-    top: 59.1%;
-    width: 10px;
-    height: 19px;
+    top: 80px;
+    height: calc(100% - 80px);
     background-size: 10px 19px;
   }
 }
 
-// .coaches__slider .swiper-button-prev:hover,
-// .coaches__slider .swiper-button-prev:focus {
-//   background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
-// }
+.coaches__slider .focus-visible {
+  border: 2px solid $color-default-black;
+  border-radius: 4px;
+}
 
-// .coaches__slider .swiper-button-next:hover,
-// .coaches__slider .swiper-button-next:focus {
-//   background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
-// }
+.coaches__slider .swiper-button-next:hover,
+.coaches__slider .swiper-button-prev:hover {
+  background-size: 25px 50px;
+}
 
-// .coaches__slider .swiper-button-prev:active {
-//   background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
-// }
-
-// .coaches__slider .swiper-button-next:active {
-//   background: linear-gradient(270deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
-// }
+.coaches__slider .swiper-button-next:active,
+.coaches__slider .swiper-button-prev:active {
+  background: linear-gradient(270deg, rgba(182, 190, 206, 0.25) 0%, rgba(182, 190, 206, 0) 100%);
+}
 
 .coaches__slider .swiper-slide {
   max-width: 260px;
@@ -318,4 +318,9 @@
     min-width: 226px;
     margin: 0 32px;
   }
+}
+
+.swiper-wrapper--nojs {
+  flex-wrap: wrap;
+  gap: 20px;
 }

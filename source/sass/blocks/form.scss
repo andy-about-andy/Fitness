@@ -37,7 +37,7 @@
   grid-column: 1/3;
   margin: 0;
   padding-left: 2px;
-  font-family: "Alumni Sans Extra Bold", "Arial", sans-serif;
+  font-family: $ff-alumnisansextrabold;
   font-weight: 800;
   font-size: 54px;
   line-height: 84px;
@@ -45,7 +45,7 @@
 
   @include vp-1199 {
     padding: 0 0 4px;
-    font-family: "Alumni Sans Bold", "Arial", sans-serif;
+    font-family: $ff-alumnisansbold;
     font-weight: 700;
     font-size: 42px;
     line-height: 50px;
@@ -91,6 +91,7 @@
     font-size: 14px;
     line-height: 16px;
     color: $color-default-white;
+    opacity: 0.7;
   }
 }
 

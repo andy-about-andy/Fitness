@@ -58,9 +58,17 @@
   }
 }
 
+.main-header__information-container address {
+  padding-top: 9px;
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
 .main-header__phone {
   display: block;
-  padding-top: 9px;
+  max-width: 180px;
   font-family: $ff-alumnisanssemibold;
   font-style: normal;
   font-weight: 600;
@@ -70,8 +78,7 @@
   color: $color-default-white;
 
   @include vp-1199 {
-    padding-top: 6px;
-    font-family: "Alumni Sans Bold", "Arial", sans-serif;
+    font-family: $ff-alumnisansbold;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
@@ -79,10 +86,13 @@
   }
 
   @include vp-767 {
-    padding: 0;
     font-family: $ff-alumnisanssemibold;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
   }
 }
