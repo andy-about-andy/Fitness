@@ -1,3 +1,5 @@
+import Swiper, {Navigation} from 'swiper';
+
 const coaches = document.querySelector('.swiper-wrapper--nojs');
 const reviews = document.querySelector('.swiper-wrapper--reviews-nojs');
 
@@ -5,6 +7,7 @@ coaches.classList.remove('swiper-wrapper--nojs');
 reviews.classList.remove('swiper-wrapper--reviews-nojs');
 
 const swiperCoaches = new Swiper('.coaches__slider', {
+  modules: [Navigation],
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -40,6 +43,7 @@ const swiperCoaches = new Swiper('.coaches__slider', {
 });
 
 const swiperReviews = new Swiper('.reviews__slider', {
+  modules: [Navigation],
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
