@@ -6,6 +6,13 @@ const reviews = document.querySelector('.swiper-wrapper--reviews-nojs');
 coaches.classList.remove('swiper-wrapper--nojs');
 reviews.classList.remove('swiper-wrapper--reviews-nojs');
 
+window.addEventListener('load', () => {
+  const slideDuplicate = document.querySelectorAll('.swiper-slide-duplicate');
+  slideDuplicate.forEach((duplicate) => {
+    duplicate.setAttribute('tabindex', -1);
+  });
+});
+
 const swiperCoaches = new Swiper('.coaches__slider', {
   modules: [Navigation],
   navigation: {
@@ -50,6 +57,7 @@ const swiperReviews = new Swiper('.reviews__slider', {
   },
   slidesPerView: 1,
   spaceBetween: 0,
+  autoHeight: true,
   keyboard: true,
   grabCursor: true,
 });

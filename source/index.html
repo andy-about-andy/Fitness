@@ -215,8 +215,9 @@
           <div class="container coaches__wrap">
             <h2>Тренеры</h2>
             <article class="coaches__slider swiper">
+              <button class="swiper-button-prev" tabindex="0" aria-label="Previous slide"></button>
               <div class="swiper-wrapper swiper-wrapper--nojs">
-                <div class="coaches__container swiper-slide">
+                <div class="coaches__container swiper-slide" tabindex="0">
                   <div class="coaches__inner">
                     <picture>
                       <source width="260" height="294" media="(min-width: 1200px)" type="image/webp" srcset="img/coach-1-desktop.webp 1x, img/coach-1-desktop@2x.webp 2x">
@@ -237,7 +238,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="coaches__container swiper-slide">
+                <div class="coaches__container swiper-slide" tabindex="0">
                   <div class="coaches__inner">
                     <picture>
                       <source width="260" height="294" media="(min-width: 1200px)" type="image/webp" srcset="img/coach-2-desktop.webp 1x, img/coach-2-desktop@2x.webp 2x">
@@ -258,7 +259,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="coaches__container swiper-slide">
+                <div class="coaches__container swiper-slide" tabindex="0">
                   <div class="coaches__inner">
                     <picture>
                       <source width="260" height="294" media="(min-width: 1200px)" type="image/webp" srcset="img/coach-3-desktop.webp 1x, img/coach-3-desktop@2x.webp 2x">
@@ -279,7 +280,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="coaches__container swiper-slide">
+                <div class="coaches__container swiper-slide" tabindex="0">
                   <div class="coaches__inner">
                     <picture>
                       <source width="260" height="294" media="(min-width: 1200px)" type="image/webp" srcset="img/coach-4-desktop.webp 1x, img/coach-4-desktop@2x.webp 2x">
@@ -301,7 +302,7 @@
                   </div>
                 </div>
 
-                <div class="coaches__container swiper-slide">
+                <div class="coaches__container swiper-slide" tabindex="0">
                   <div class="coaches__inner">
                     <picture>
                       <source width="260" height="294" media="(min-width: 1200px)" type="image/webp" srcset="img/coach-5-desktop.webp 1x, img/coach-5-desktop@2x.webp 2x">
@@ -322,7 +323,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="coaches__container swiper-slide">
+                <div class="coaches__container swiper-slide" tabindex="0">
                   <div class="coaches__inner">
                     <picture>
                       <source width="260" height="294" media="(min-width: 1200px)" type="image/webp" srcset="img/coach-6-desktop.webp 1x, img/coach-6-desktop@2x.webp 2x">
@@ -343,7 +344,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="coaches__container swiper-slide">
+                <div class="coaches__container swiper-slide" tabindex="0">
                   <div class="coaches__inner">
                     <picture>
                       <source width="260" height="294" media="(min-width: 1200px)" type="image/webp" srcset="img/coach-7-desktop.webp 1x, img/coach-7-desktop@2x.webp 2x">
@@ -364,7 +365,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="coaches__container swiper-slide">
+                <div class="coaches__container swiper-slide" tabindex="0">
                   <div class="coaches__inner">
                     <picture>
                       <source width="260" height="294" media="(min-width: 1200px)" type="image/webp" srcset="img/coach-8-desktop.webp 1x, img/coach-8-desktop@2x.webp 2x">
@@ -386,8 +387,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+              <button class="swiper-button-next" tabindex="0" aria-label="Next slide"></button>
             </article>
           </div>
         </section>
@@ -395,7 +395,7 @@
           <div class="container advantages__wrap">
             <h2>Наши преимущества</h2>
             <ul class="advantages__list">
-              <li class="advantages__item advantages__item--square">
+              <li class="advantages__item advantages__item--square advantages__item--line">
                 <div class="advantages__value">
                   900<span class="advantages__text">кв/м</span>
                 </div>
@@ -404,7 +404,7 @@
                   <p>Занимайтесь без&nbsp;очередей и&nbsp;толпучки</p>
                 </div>
               </li>
-              <li class="advantages__item advantages__item--parking">
+              <li class="advantages__item advantages__item--parking advantages__item--line">
                 <div class="advantages__value">
                   70<span class="advantages__text">машин</span>
                 </div>
@@ -460,17 +460,15 @@
                   </picture>
                 </div>
               </div>
-              <div class="stock__others">
-                <div class="stock__inner">
-                  <h3>Месяц бесплатно</h3>
-                  <p>Приведи друга, получи абонемент&nbsp;в&nbsp;подарок</p>
-                  <a class="btn btn--more btn--more-other" href="#">Подробнее</a>
-                </div>
-                <div class="stock__inner">
-                  <h3>Скидка 20%</h3>
-                  <p>Корпоративный фитнес  с&nbsp;командой</p>
-                  <a class="btn btn--more btn--more-other" href="#">Подробнее</a>
-                </div>
+              <div class="stock__inner">
+                <h3>Месяц бесплатно</h3>
+                <p>Приведи друга, получи абонемент&nbsp;в&nbsp;подарок</p>
+                <a class="btn btn--more btn--more-other" href="#">Подробнее</a>
+              </div>
+              <div class="stock__inner">
+                <h3>Скидка 20%</h3>
+                <p>Корпоративный фитнес  с&nbsp;командой</p>
+                <a class="btn btn--more btn--more-other" href="#">Подробнее</a>
               </div>
             </div>
           </div>
@@ -524,8 +522,8 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+              <button class="swiper-button-prev" tabindex="0" aria-label="Previous slide"></button>
+              <button class="swiper-button-next" tabindex="0" aria-label="Next slide"></button>
             </article>
           </div>
         </section>

@@ -132,13 +132,14 @@
 .gym__video-wrap {
   position: absolute;
   left: 39.2%;
-  bottom: -115px;
+  top: 288px;
   width: 364px;
   height: 228px;
 
   @include vp-1199 {
     left: auto;
     right: auto;
+    top: auto;
     bottom: -83px;
     width: 266px;
     height: 167px;
