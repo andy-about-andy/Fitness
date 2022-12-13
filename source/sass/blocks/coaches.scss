@@ -66,37 +66,6 @@
   width: 100%;
 }
 
-.coaches__inner:hover,
-.coaches__inner:focus-within {
-  background-image: none;
-}
-
-.coaches__inner:hover .coaches__description-inner,
-.coaches__inner:focus-within .coaches__description-inner {
-  display: flex;
-}
-
-.coaches__inner:hover .coaches__description-container,
-.coaches__inner:focus-within .coaches__description-container {
-  background-color: $color-default-black;
-  opacity: 0.89;
-}
-
-.coaches__inner:hover h3,
-.coaches__inner:focus-within .h3 {
-  margin: 0 auto;
-  padding: 0 1px 0 0;
-
-  @include vp-1199 {
-    padding: 0 14px 0 0;
-  }
-
-  @include vp-767 {
-    padding: 0;
-  }
-}
-
-
 .coaches__description-container {
   position: absolute;
   top: 0;
@@ -317,6 +286,36 @@
     max-width: 400px;
     min-width: 226px;
     margin: 0 32px;
+  }
+}
+
+.coaches__container:hover,
+.coaches__container:focus-within {
+  background-image: none;
+}
+
+.coaches__container:hover .coaches__description-inner,
+.coaches__container:focus-within .coaches__description-inner {
+  display: flex;
+}
+
+.coaches__container:hover .coaches__description-container,
+.coaches__container:focus-within .coaches__description-container {
+  background-color: $color-default-black;
+  opacity: 0.89;
+}
+
+.coaches__container:hover h3,
+.coaches__container:focus-within h3 {
+  margin: 0 auto;
+  padding: 0 1px 0 0;
+
+  @include vp-1199 {
+    padding: 0 14px 0 0;
+  }
+
+  @include vp-767 {
+    padding: 0;
   }
 }
 

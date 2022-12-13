@@ -68,11 +68,11 @@
   }
 }
 
-// @mixin vp-374 {
-//   @media (max-width: ($vp-375 - 1px)) {
-//     @content;
-//   }
-// }
+@mixin vp-554 {
+  @media (max-width: ($vp-555 - 1px)) {
+    @content;
+  }
+}
 
 // Mobile first
 
