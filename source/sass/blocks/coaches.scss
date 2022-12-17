@@ -184,7 +184,6 @@
 
 .coaches__slider .swiper-button-prev,
 .coaches__slider .swiper-button-next {
-  position: absolute;
   top: 112px;
   left: 0;
   width: 56px;
@@ -197,7 +196,6 @@
   background-size: 17px 32px;
   background-position: left 0 top 50%;
   border: none;
-  cursor: pointer;
   outline: none;
 
   @include vp-1199 {

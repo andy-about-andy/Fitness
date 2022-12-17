@@ -8,7 +8,6 @@
   }
 
   @include vp-767 {
-    min-height: 480px;
     padding: 34px 0 70px;
   }
 }
@@ -24,8 +23,11 @@
   }
 
   @include vp-767 {
+    position: relative;
     flex-direction: column;
-    width: 320px;
+    width: auto;
+    max-width: 500px;
+    min-width: 226px;
   }
 }
 
@@ -71,10 +73,11 @@
   @include vp-767 {
     grid-template-columns: 1fr 1fr;
     gap: 15px 8px;
-    width: 226px;
+    width: auto;
+    max-width: 470px;
+    min-width: 226px;
     min-height: 335px;
     padding: 40px 25px 36px;
-    margin: 0 auto;
   }
 }
 
@@ -131,7 +134,7 @@
   }
 
   @include vp-767 {
-    width: 290px;
+    width: auto;
   }
 }
 
@@ -144,7 +147,7 @@
   }
 
   @include vp-767 {
-    width: 226px;
+    width: auto;
   }
 }
 
@@ -155,10 +158,8 @@
 
 .reviews__slider .swiper-button-prev,
 .reviews__slider .swiper-button-next {
-  position: absolute;
   top: 0;
   left: 0;
-  z-index: 5;
   width: 56px;
   height: 100%;
   margin: 0;
@@ -169,12 +170,13 @@
   background-size: 16px 32px;
   background-position: left 0 top 50%;
   border: none;
-  cursor: pointer;
   outline: none;
 
   @include vp-767 {
+    top: 90px;
     width: 32px;
     background-size: 10px 19px;
+    height: calc(100% - 100px);
   }
 }
 
@@ -196,16 +198,33 @@
 .reviews__slider .swiper-button-prev {
   left: 0;
   right: auto;
+
+  @include vp-767 {
+    left: 14px;
+  }
 }
 
 .reviews__slider .swiper-button-next {
   left: auto;
   right: 0;
   rotate: 180deg;
+
+  @include vp-767 {
+    right: 14px;
+  }
 }
 
 .swiper-wrapper--reviews-nojs {
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 20px;
+}
+
+.reviews__wrap .swiper {
+  @include vp-767 {
+    position: static;
+    max-width: 500px;
+    min-width: 226px;
+    margin: 0 32px;
+  }
 }

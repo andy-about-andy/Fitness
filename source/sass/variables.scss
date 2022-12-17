@@ -26,7 +26,6 @@ $fz-default:                        14px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-rouble:                         "Rouble", "Arial", sans-serif;
 
 // font-weight: 400;
 $ff-robotocondensed:                 "Roboto Condensed", "Arial", sans-serif;
@@ -62,13 +61,10 @@ $trans-600:                         0.6s $tf-default;
 // Viewports
 // ---------------------------------
 
-// $vp-320:                            320px;
 $vp-555:                            555px;
 $vp-768:                            768px;
 $vp-1200:                           1200px;
 $vp-1240:                           1240px;
-// $vp-1440:                           1440px;
-// $vp-1920:                           1920px;
 
 // Retina
 // ---------------------------------
